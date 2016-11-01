@@ -1,0 +1,10 @@
+      <div class="artist-list">
+      <% @artists.each do |artist| %>
+            <div class="col-sm-6 col-md-3">
+                <img src="<%= artist.image_url %>">
+                <h3><%= artist.name%></h3>
+                <%= link_to "Ver mas", artist_path(artist), class: "btn btn-primary",id: "boton" %>
+            </div>
+      <% end %>
+      </div>
+
